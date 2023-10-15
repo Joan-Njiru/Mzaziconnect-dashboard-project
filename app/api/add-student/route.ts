@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     const posts = await request.json().then(async (response) => {
       console.log(response);
       
-      const result = await fetch(`${BASE_URL}/students/add_student/`, {
+      const result = await fetch(`${BASE_URL}students/add_student/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

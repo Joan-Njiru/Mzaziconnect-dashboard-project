@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     }
     const posts = await request.json().then(async (response) => {
       const result = await fetch(
-        `${BASE_URL}/account/schools/2/parents/register/`,
+        `${BASE_URL}account/schools/2/parents/register/`,
         {
           method: "POST",
           headers: {
