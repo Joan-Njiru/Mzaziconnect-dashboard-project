@@ -8,7 +8,7 @@ export async function POST(request: Request) {
       });
     }
     const body = await request.json().then(response => response);
-    const result = await fetch(`https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/account/schools/signup/registered`, {
+    const result = await fetch(`${BASE_URL}/account/schools/signup/registered`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

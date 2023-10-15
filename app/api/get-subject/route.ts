@@ -7,7 +7,7 @@ export async function GET(){
                 statusText:'failed'
             })
         }
-        const response= await fetch ('https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/subjects/subjectsList/')
+        const response= await fetch (`${BASE_URL}/subjects/subjectsList/`)
         const result = await response.json();
         return new Response(JSON.stringify(result),{
             status:200,

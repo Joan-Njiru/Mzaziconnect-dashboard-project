@@ -11,7 +11,7 @@ const Sidebar = () => {
   const icons = [
     { name: "Dashboard", link: '/dashboard', icon: BiSolidDashboard },
     { name: "Teachers", link: '/teachers', icon: PiChalkboardTeacher, margin: true },
-    { name: "Classes", link: '/classes', icon: CgNotes },
+    { name: "Classes", link: '/classes', icon: PiHouseLineBold },
     { name: "Subjects", link: '/subjects', icon: CgNotes },
     { name: "Parents", link: '/parents', icon: MdOutlinePersonalInjury },
     { name: "Students", link: '/students', icon: PiGraduationCap },

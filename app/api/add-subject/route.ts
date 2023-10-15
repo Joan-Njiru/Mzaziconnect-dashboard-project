@@ -8,7 +8,7 @@ export async function POST(request: Request) {
       });
     }
     const posts = await request.json().then(async (response) => {
-      const result = await fetch('https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/subjects/subjectsList/',
+      const result = await fetch(`https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/subjects/subjectsList/`,
         {
           method: "POST",
           headers: {

@@ -7,7 +7,7 @@ export async function GET(){
                 statusText:'failed'
             })
         }
-        const response= await fetch ('https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/account/schools/1/parents/register/')
+        const response= await fetch (`https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/account/schools/2/parents/register/`)
         const result = await response.json();
         return new Response(JSON.stringify(result),{
             status:200,

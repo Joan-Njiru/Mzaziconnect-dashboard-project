@@ -48,7 +48,7 @@ import { SubjectData } from "../hooks/usePostSubject";
     }
   }
   export const postTeacher = async (TeacherData:any) => {
-    const url = '/api/add-teacher';
+    const url = 'api/add-teacher';
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -70,7 +70,7 @@ import { SubjectData } from "../hooks/usePostSubject";
   }
 
   export const getParent= async()=>{
-    const url = 'api/get-parent';
+    const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/account/schools/2/parents/register/';
     try{
         const response = await fetch(url);
         const result = await response.json();
@@ -81,7 +81,7 @@ import { SubjectData } from "../hooks/usePostSubject";
     }
  }
 export async function postParent(parentData: any) {
-  const url = '/api/add-parent';
+  const url = 'api/add-parent';
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -133,7 +133,7 @@ export const postLogin = async (formData: FormData) => {
 
   
 export const getSubject= async()=>{
-  const url = 'api/get-subject';
+  const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/subjects/subjectsList/';
   try{
       const response = await fetch(url);
       const result = await response.json();
